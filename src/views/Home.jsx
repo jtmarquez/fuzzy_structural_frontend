@@ -8,6 +8,9 @@ export default function Home() {
         <div>
           <p className='title has-text-white'>Simple fuzzy logic classificator app over structure state </p>
           <p className='subtitle my-5 has-text-white-ter'>Developed by Ignacio Márquez and José Tomás Márquez</p>
+          <div className='my-5 ml-5'>
+            <button className='button ml-5 is-white is-large is-rounded is-inverted'>Take me to the app!</button>
+          </div>
         </div>
       </div>
     </section>
