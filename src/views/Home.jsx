@@ -3,10 +3,13 @@ import { Link } from 'react-router-dom';
 
 export default function Home() {
   return (
-    <div>
-      <div>
-        <h1>Simple fuzzy logic classificator app over structure state </h1>
+    <section className='hero has-background-link is-fullheight-with-navbar'>
+      <div className='hero-body is-fullheight'>
+        <div>
+          <p className='title has-text-white'>Simple fuzzy logic classificator app over structure state </p>
+          <p className='subtitle my-5 has-text-white-ter'>Developed by Ignacio Márquez and José Tomás Márquez</p>
+        </div>
       </div>
-    </div>
+    </section>
   );
 }

@@ -9,12 +9,12 @@ import Navbar from './contexts/navbar'
 export default function AppRoutes() {
     return (
         <BrowserRouter>
+        <Navbar />
             <Routes>
-                <Navbar />
-                <Route path = "/" element={<Home />} />
-                <Route path = "/about" element={<About />} />
-                <Route path = "/fuzzify" element={<Fuzzify />} />
-                <Route element={<NotFound/>} />
+                    <Route path = "/" element={<Home />} />
+                    <Route path = "/about" element={<About />} />
+                    <Route path = "/fuzzify" element={<Fuzzify />} />
+                    <Route element={<NotFound/>} />
             </Routes>
         </BrowserRouter>
     );
