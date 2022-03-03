@@ -11,11 +11,14 @@ export default function Fuzzify() {
   const [resultado, setResultado] = useState({});
 
   async function handleSubmit(values) {
-    console.log('AAAAAAA');
+    console.log(values);
     setLoading(true);
     const requestOptions = {
       method: 'POST',
-      headers: {headers: { 'Content-Type': 'application/json'}},
+      headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json'
+      },
       body: JSON.stringify(values),
     };
     try {
@@ -25,7 +28,9 @@ export default function Fuzzify() {
         const error = await response.text();
         throw new Error(error);
       }
-      setResultado(response);
+      const res = await response.json()
+      setResultado(res);
+      console.log(resultado);
     } catch (error) {
       console.log(requestOptions.body)
       setMessage(error.message);
