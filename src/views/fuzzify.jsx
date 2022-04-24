@@ -71,12 +71,6 @@ export default function Fuzzify() {
               <button className="button is-white mt-5" onClick={handleNewEval}>Evaluar otra estructura</button>
             </div>
           </div>
-          <div className='column is half'>
-            <div>
-              <p className='title has-text-white'>{`What does it mean that the category is ${resultado['categoria']}?`}</p>
-              <p className='subtitle my-5 has-text-white-ter'>significa que blablabla</p>
-            </div>
-          </div>
         </div>
       </section>
     );
@@ -100,17 +94,17 @@ export default function Fuzzify() {
               P11: '',
             }}
             validationSchema={Yup.object({
-              P1: Yup.number().integer().min(0).max(10).required('This field is required'),
-              P2: Yup.number().integer().min(0).max(10).required('This field is required'),
-              P3: Yup.number().integer().min(0).max(10).required('This field is required'),
-              P4: Yup.number().integer().min(0).max(10).required('This field is required'),
-              P5: Yup.number().integer().min(0).max(10).required('This field is required'),
-              P6: Yup.number().integer().min(0).max(10).required('This field is required'),
-              P7: Yup.number().integer().min(0).max(10).required('This field is required'),
-              P8: Yup.number().integer().min(0).max(10).required('This field is required'),
-              P9: Yup.number().integer().min(0).max(10).required('This field is required'),
-              P10: Yup.number().integer().min(0).max(10).required('This field is required'),
-              P11: Yup.number().integer().min(0).max(10).required('This field is required'),
+              P1: Yup.number().min(0).max(10).required('This field is required'),
+              P2: Yup.number().min(0).max(10).required('This field is required'),
+              P3: Yup.number().min(0).max(10).required('This field is required'),
+              P4: Yup.number().min(0).max(10).required('This field is required'),
+              P5: Yup.number().min(0).max(10).required('This field is required'),
+              P6: Yup.number().min(0).max(10).required('This field is required'),
+              P7: Yup.number().min(0).max(10).required('This field is required'),
+              P8: Yup.number().min(0).max(10).required('This field is required'),
+              P9: Yup.number().min(0).max(10).required('This field is required'),
+              P10: Yup.number().min(0).max(10).required('This field is required'),
+              P11: Yup.number().min(0).max(10).required('This field is required'),
             })}
             onSubmit={handleSubmit}
           >

@@ -22,7 +22,6 @@ export default function About() {
               </div>
               <div className='column is-two-thirds'>
                 <p className='subtitle'>Ignacio Márquez</p>
-                <p>???</p>
                 <a href='https://www.linkedin.com/in/ignaciomarquezbischoff/'>LinkedIn</a>
               </div>
             </div>
